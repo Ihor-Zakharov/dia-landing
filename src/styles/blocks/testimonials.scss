@@ -1,0 +1,40 @@
+.testimonials {
+  display: flex;
+  font-display: column;
+  margin-bottom: 120px;
+
+  @include onTablet {
+    margin-bottom: 148px;
+  }
+
+  &__text {
+    margin: 120px 0 48px;
+
+    @include onTablet {
+      margin: 148px 0 65px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+
+  &__what-people-say {
+    margin: 0;
+  }
+  
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-self: center;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+  }
+}
